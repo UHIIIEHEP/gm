@@ -1,0 +1,35 @@
+/*@import blockElement($fontSize: 32px);
+*/
+.content {
+  display: flex;
+  height: 250px;
+  width: 1000px;
+  background-color: azure;
+  border: 1px solid black; }
+  .content .infoIn {
+    position: absolute;
+    display: block;
+    width: 600px; }
+  .content .infoOut {
+    position: absolute;
+    display: block;
+    width: 600px;
+    left: 605px; }
+.block {
+  margin: 5px;
+  display: flex; }
+  .block label {
+    display: inline;
+    font-size: 24px; }
+    .block label.label-out {
+      width: auto; }
+  .block input {
+    display: inline;
+    font-size: 24px; }
+    .block input.input {
+      width: 50px; }
+    .block input.input-text {
+      width: 150px; }
+button {
+  font-size: 24px;
+  margin: 5px; }
