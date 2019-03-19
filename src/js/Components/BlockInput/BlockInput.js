@@ -75,7 +75,7 @@ class blockInput{
 
         labelSign
             .offset({
-                left: this.parent.position().left + inputTextElement.position().left + inputTextElement.width() + 10
+                left: this.parent.position().left + inputTextElement.position().left + inputTextElement.width() + 20
             })            
     }
 }

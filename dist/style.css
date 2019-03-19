@@ -22,7 +22,8 @@
     display: inline;
     font-size: 24px; }
     .block label.label-out {
-      width: auto; }
+      width: auto;
+      margin-left: 10px; }
   .block input {
     display: inline;
     font-size: 24px; }

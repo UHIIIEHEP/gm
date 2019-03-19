@@ -36,6 +36,7 @@ class Button{
               for(let key in resultObj){
                   
                   if($(el).data("target") == key){
+                      console.log($(el).data("target"))
                     $(el).html(roundNumber(resultObj[`${$(el).data("target")}`]))
                   }
               }
