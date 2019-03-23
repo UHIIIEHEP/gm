@@ -1,5 +1,5 @@
 import BlockInput from './Components/BlockInput/BlockInput.js';
-import Button from './Components/Button/Button.js'
+import Button from './Components/Button/Button.js';
 
 const content = $('.content');
 
@@ -17,7 +17,7 @@ let inputName = new BlockInput({
     text: "ФСК ЕЭС",
     parent: infoIn,
     left: 280,
-    width: 280,
+    width: 250,
     default: 'Название',
     target: "name"
 }).create();
@@ -92,7 +92,7 @@ let labelTransactionValue = new BlockInput({
     title: "Стоимость сделки:",
     text: "",
     parent: infoOut,
-    left: 550,
+    left: 280,
     sign: "руб",
     width: 'auto',
     default: 1,
@@ -106,7 +106,7 @@ let labelComission = new BlockInput({
     title: "Комиссия:",
     text: "",
     parent: infoOut,
-    left: 550,
+    left: 280,
     sign: "руб",
     width: 'auto',
     default: 1,
@@ -120,7 +120,7 @@ let labelResultPrice = new BlockInput({
     title: "Цена продажи:",
     text: "",
     parent: infoOut,
-    left: 550,
+    left: 280,
     sign: "руб",
     width: 'auto',
     default: 1,

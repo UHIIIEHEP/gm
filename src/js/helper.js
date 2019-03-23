@@ -1,9 +1,11 @@
-//функция округления до сотых
+/* функция округления до сотых */
 
-export function roundNumber(num){
-    num = Math.ceil(num*100)/100;
-    return round(num);
+export function roundNumber (num) {
+  num = Math.ceil ( num * 100 ) / 100
+  return round(num)
 }
+
+/* функция добавления тыс млн млрд */
 
 function round(num){
     let strNum;
@@ -12,8 +14,7 @@ function round(num){
     function postfix(numeric, index){
         numeric /= 1000;
         if(index > 10){
-            console.error("ТАких цифр не бывыает. (helper.js -> round(num))")
-            
+            console.error("Таких цифр не бывыает. (helper.js -> round(num))")            
         }
         let ii = 1;
         if(outObj.index == 0){
@@ -34,6 +35,6 @@ function round(num){
         case 3: strNum = outObj.value + " млрд."; break;  
         default: strNum = outObj.value + " очень много "; break;          
     }
-    
+
     return strNum;
 }

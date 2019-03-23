@@ -1,36 +1,35 @@
-/*@import blockElement($fontSize: 32px);
-*/
 .content {
   display: flex;
-  height: 250px;
-  width: 1000px;
+  flex-wrap: wrap;
+  min-width: 480px;
+  max-width: 1000px;
   background-color: azure;
   border: 1px solid black; }
   .content .infoIn {
-    position: absolute;
     display: block;
-    width: 600px; }
+    width: 480px; }
   .content .infoOut {
-    position: absolute;
     display: block;
-    width: 600px;
-    left: 605px; }
+    width: 400px; }
 .block {
   margin: 5px;
   display: flex; }
   .block label {
-    display: inline;
-    font-size: 24px; }
+    display: block;
+    font-size: 24px;
+    margin-left: 10px; }
     .block label.label-out {
-      width: auto;
-      margin-left: 10px; }
+      width: auto; }
   .block input {
-    display: inline;
-    font-size: 24px; }
+    display: block;
+    font-size: 24px;
+    margin-left: 10px;
+    border: 1px solid black; }
     .block input.input {
       width: 50px; }
     .block input.input-text {
       width: 150px; }
 button {
   font-size: 24px;
-  margin: 5px; }
+  margin: 5px;
+  margin-left: 10px; }

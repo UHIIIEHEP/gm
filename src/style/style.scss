@@ -1,23 +1,19 @@
-/*@import blockElement($fontSize: 32px);
-*/
 .content{
     display: flex;
-    height: 250px;
-    width: 1000px;
+    flex-wrap: wrap;
+    min-width: 480px;
+    max-width: 1000px;
     background-color: azure;
     border: 1px solid black;
 
     .infoIn{
-        position: absolute;
         display: block;
-        width: 600px;
+        width: 480px;
     }
 
     .infoOut{
-        position: absolute;
         display: block;
-        width: 600px;
-        left: 605px;
+        width: 400px;
     }
 
 

@@ -2,7 +2,7 @@ import './BlockInput.scss';
 
 class blockInput{
     constructor(opt={}){
-        this.className = opt.className? opt.className:"URA";
+        this.className = opt.className? opt.className:"NoClass";
         this.type = opt.type? opt.type: 'input';
         this.title = opt.title? opt.title: '';
         this.text = opt.text? opt.text: '';
@@ -62,21 +62,14 @@ class blockInput{
 
             
         }
-        inputTextElement.data("target", this.target)
-        let leftPos = inputTextElement.offset().left < this.left ? this.left: inputTextElement.offset().left
+        inputTextElement.data("target", this.target);
         inputTextElement
-            .offset({left: leftPos})
             .width(this.width);
 
         let labelSign = $('<label/>',{
             class: `label-sign label-sign-${this.className}`,
             text: `${this.sign} `
-        }).appendTo(blockElement);
-
-        labelSign
-            .offset({
-                left: this.parent.position().left + inputTextElement.position().left + inputTextElement.width() + 20
-            })            
+        }).appendTo(blockElement);           
     }
 }
 

@@ -1,8 +1,0 @@
-@mixin blockElement(
-    $fontSize: ""
-){
-    .block,
-    .label{
-        font-size: $fontSize;
-    }
-}

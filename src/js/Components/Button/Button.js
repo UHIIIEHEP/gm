@@ -25,22 +25,19 @@ class Button{
 
             };
             $('input').toArray().forEach(el=>{
-                obj[`${$(el).data("target")}`]=el.value
-              //  console.log(`${obj[$(el).data("target")]} => ${el.value}` ) 
+                obj[`${$(el).data("target")}`]=el.value;
               
             })
-          //  console.log(obj)
+            
           let resultObj = calculate(obj);
 
           $('.label-out').toArray().forEach(el=>{
               for(let key in resultObj){
                   
                   if($(el).data("target") == key){
-                      console.log($(el).data("target"))
                     $(el).html(roundNumber(resultObj[`${$(el).data("target")}`]))
                   }
               }
-            //   console.log("result ",el.value = resultObj[`${$(el).data("target")}`])
           })
         })
     }

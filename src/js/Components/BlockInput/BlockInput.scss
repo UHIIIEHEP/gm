@@ -2,28 +2,30 @@
     margin: 5px;
     display: flex;
     label{
-        display: inline;
+        display: block;
         font-size: 24px;
+        margin-left: 10px;
 
         &.label-out{
             width: auto;
-            margin-left: 10px;
         }
 
         &.label-sign{
-            
         }
     }
 
     input{
-        display: inline;
+        display: block;
         font-size: 24px; 
+        margin-left: 10px;
+        border: 1px solid black;
+
         &.input{
             width: 50px;
         }
         &.input-text{
             width: 150px;
-        }        
+        }
     }
 
 
